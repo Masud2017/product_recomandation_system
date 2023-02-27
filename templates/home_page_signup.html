@@ -1,0 +1,42 @@
+{% extends "index.html" %}
+
+{% block body %}
+    <style>
+        .btn:focus {
+            width: 100% !important;
+        }
+        
+    </style>
+    <div class = "col-sm-8" style = "height : 100vh">
+        <div class = "bg-primary text-light p-sm-1 d-flex justify-content-center">
+            <form method = "get" action = "#" class = "d-flex gap-4">
+                <input type = "text" placeholder="Type to search..." name = "search_str" class = "form-control" style ="width: 25rem ;"/>
+                <input type = "submit" value = "Search" class ="btn btn-success text-center" style = "width: 5rem;"/>
+            </form>
+        </div>
+
+        
+        <div name = "restarent-card-list" class = "row gap-2 d-flex justify-content-center mt-sm-4" style = "overflow-y: auto;height: 90vh;">
+            <div class ="col-sm-3 bg-primary" style = "height: 20rem;">helloworld</div>
+            <div class ="col-sm-3 bg-primary" style = "height: 20rem;">helloworld</div>
+            <div class ="col-sm-3 bg-primary" style = "height: 20rem;">helloworld</div>
+            <div class ="col-sm-3 bg-primary" style = "height: 20rem;">helloworld</div>
+            <div class ="col-sm-3 bg-primary" style = "height: 20rem;">helloworld</div>
+            <div class ="col-sm-3 bg-primary" style = "height: 20rem;">helloworld</div>
+            <div class ="col-sm-3 bg-primary" style = "height: 20rem;">helloworld</div>
+            <div class ="col-sm-3 bg-primary" style = "height: 20rem;">helloworld</div>
+            <div class ="col-sm-3 bg-primary" style = "height: 20rem;">helloworld</div>
+            <div class ="col-sm-3 bg-primary" style = "height: 20rem;">helloworld</div>
+            <div class ="col-sm-3 bg-primary" style = "height: 20rem;">helloworld</div>
+            <div class ="col-sm-3 bg-primary" style = "height: 20rem;">helloworld</div>            
+        </div>
+    </div>
+    <div class = "col-sm-4 d-flex justify-content-center align-items-center" style = "background-color: #36C1FD;">
+        <form action = "#" method = "get" style="width : 20rem" class = "text-center">
+            <input type = "text" placeholder="Enter your user id" name = "u_id" class = "form-control" required/>
+            <input type = "password" placeholder="Enter your password" name = "pass" class ="form-control mt-sm-2" required/>
+            <input type = "submit" value = "Signup" class ="btn mt-sm-4" style = "background-color: #5114B5; color : white; width: 100%;" required/>
+            <a class = "text-light" href = "{{url_for('index')}}">Already have an account ?</a>
+        </form>
+    </div>
+{% endblock %}
