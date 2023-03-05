@@ -1,4 +1,4 @@
-from flask import Flask,Blueprint
+from flask import Flask,Blueprint   
 
 auth_controller = Blueprint('auth_controller',__name__)
 
